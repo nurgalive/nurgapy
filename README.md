@@ -14,7 +14,10 @@ Currently, `nurgapy` library consists two functions:
 
 
 ## Roadmap
-- Add basic code
+- ~~Add basic code~~
+- Add tests
+- Add badges
+- Publish to pip
 
 Progress bar
 - Add percentages
