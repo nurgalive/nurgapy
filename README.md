@@ -1,5 +1,13 @@
 # nurgapy
 
+```bash  _   _                       ____        
+ | \ | |_   _ _ __ __ _  __ _|  _ \ _   _ 
+ |  \| | | | | '__/ _` |/ _` | |_) | | | |
+ | |\  | |_| | | | (_| | (_| |  __/| |_| |
+ |_| \_|\__,_|_|  \__, |\__,_|_|    \__, |
+                  |___/             |___/ 
+```
+
 Small convenience Python library.
 
 Rationally to build this library, that I don't want copy over this code to multiple projects.
