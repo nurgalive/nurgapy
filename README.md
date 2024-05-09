@@ -18,9 +18,9 @@ Currently, `nurgapy` library consists two functions:
 
 ## Roadmap
 - ~~Add basic code~~
-~~- Add pre-commit hook~~
+- ~~Add pre-commit hook~~
     - Add more rules to pre-commit
-~~- Add public API to the `init.py`~~
+- ~~Add public API to the `init.py`~~
 - Add tests
 - Add badges
 - Add packaging
