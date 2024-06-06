@@ -1,4 +1,4 @@
-from nurgapy.tyme import tyme
+from nurgapy import tyme
 
 
 def func():
