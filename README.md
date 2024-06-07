@@ -22,7 +22,9 @@ Currently, `nurgapy` library consists two functions:
     - Add more rules to pre-commit
 - ~~Add public API to the `init.py`~~
 - Add tests
+    - Add tests automation [Nox](https://nox.thea.codes/en/stable/)
 - Add badges
+    - test coverage ([coveralls](https://coveralls.io/))
 - Add packaging
 - Publish to pip
 
