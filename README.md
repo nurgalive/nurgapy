@@ -32,14 +32,14 @@ pytest -v
     - Add more rules to pre-commit
 - [x] ~~Add public API to the `init.py`~~
 - [x] ~~Add tests~~
-- Add tests automation [Nox](https://nox.thea.codes/en/stable/)
-- Add badges
-    - test coverage ([coveralls](https://coveralls.io/))
-- Add packaging
-- Publish to pip
-- Add `documentation` folder
+- [ ] Add tests automation [Nox](https://nox.thea.codes/en/stable/)
+- [ ] Add badges
+    - [ ] test coverage ([coveralls](https://coveralls.io/))
+- [ ] Add packaging
+- [ ] Publish to pip
+- [ ] Add `documentation` folder
 
 Progress bar
-- Add percentages
-- Flexible size
-- Progress bar runs in the independent thread
+- [ ] Add percentages
+- [ ] Flexible size
+- [ ] Progress bar runs in the independent thread
