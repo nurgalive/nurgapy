@@ -31,7 +31,7 @@ pytest -v
 - [x] ~~Add pre-commit hook~~
     - Add more rules to pre-commit
 - [x] ~~Add public API to the `init.py`~~
--[x] ~~Add tests~~
+- [x] ~~Add tests~~
 - Add tests automation [Nox](https://nox.thea.codes/en/stable/)
 - Add badges
     - test coverage ([coveralls](https://coveralls.io/))
