@@ -3,7 +3,7 @@ from datetime import datetime
 from datetime import timedelta
 
 
-def chop_microseconds(delta):
+def chop_microseconds(delta: timedelta):
     return delta - timedelta(microseconds=delta.microseconds)
 
 
