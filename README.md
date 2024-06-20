@@ -27,12 +27,12 @@ pytest -v
 `-s` - will print the `print()` statements. Use it for debug.
 
 ## Roadmap
-- ~~Add basic code~~
-- ~~Add pre-commit hook~~
+- [x] ~~Add basic code~~
+- [x] ~~Add pre-commit hook~~
     - Add more rules to pre-commit
-- ~~Add public API to the `init.py`~~
-- Add tests
-    - Add tests automation [Nox](https://nox.thea.codes/en/stable/)
+- [x] ~~Add public API to the `init.py`~~
+-[x] ~~Add tests~~
+- Add tests automation [Nox](https://nox.thea.codes/en/stable/)
 - Add badges
     - test coverage ([coveralls](https://coveralls.io/))
 - Add packaging
