@@ -63,6 +63,28 @@ poetry run pytest -v
 
 `-s` - will print the `print()` statements. Use it for debug.
 
+## Publish a new version
+
+In NurgaPy semantic versioning is used. After pushing a new version, a GitHub Actions workflow will be triggered, which will push a new version to PyPi and will also create a new GitHub Release.
+In order to publish a new version, apply the next steps:
+```
+poetry version patch  # 0.0.x
+
+poetry version minor  # 0.x.0
+
+poetry version majon  # x.0.0
+```
+
+Then create a proper git tag
+```
+git tag x.x.x
+```
+
+And push it
+```
+git push origin --tags
+```
+
 ## Roadmap
 - [x] ~~Add basic code~~
 - [x] ~~Add pre-commit hook~~
