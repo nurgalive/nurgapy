@@ -34,6 +34,25 @@ Run the project example
 poetry run src/main.py
 ```
 
+## Installing pre-commit checks
+
+Install pre-commit
+```
+poetry run pre-commit install
+```
+
+Pre-commit will run automatically after running `git commit`.
+But it is also possible to run pre-commit checks against all files manually.
+Adding `--verbose` will also print more detailed info. Helpful for debugging test.
+```
+poetry run pre-commit run --all-files
+```
+
+Update the pre-commit hooks.
+```
+poetry run pre-commit autoupdate
+```
+
 ## Running tests
 
 Run tests using pytest.
@@ -57,6 +76,7 @@ poetry run pytest -v
 - [x] Publish nurgapy to pip
 - [x] Add a runner, which automatically publishes a new version to pip
 - [x] Add `documentation` folder
+- [ ] Create an `examples` folder
 
 Progress bar
 - [ ] Add percentages
