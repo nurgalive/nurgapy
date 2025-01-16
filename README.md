@@ -16,12 +16,30 @@ Currently, `nurgapy` library consists two functions:
 - `tyme` - it is a small wrapper function, which is used for measuring execution time of functions. Also works for the class functions.
 - `trackbar` - it is a simple progress bar, which just works without many imports. Inspired by [stackoverflow post](https://stackoverflow.com/a/34482761/15059130). There is well-known `tqdm` library, but it prevents user from using `print` statements. For simple use-cases this progress bar should be enough. There is another nice library `alive-progress`, which does not have this issue and many others. But I just wanted to have some simple progress bar, which lives in the single library with other convenience functions.
 
+## Getting started
+This project uses Poetry for the package management.
+
+Install Poetry (if not installed)
+```
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Install dependencies
+```
+poetry install
+```
+
+Run the project example
+```
+poetry run src/main.py
+```
+
 ## Running tests
 
 Run tests using pytest.
 
 ```bash
-pytest -v
+poetry run pytest -v
 ```
 
 `-s` - will print the `print()` statements. Use it for debug.
@@ -35,7 +53,7 @@ pytest -v
 - [ ] Add tests automation [Nox](https://nox.thea.codes/en/stable/)
 - [ ] Add badges
     - [ ] test coverage ([coveralls](https://coveralls.io/))
-- [ ] Add packaging
+- [x] Add packaging
 - [ ] Publish nurgapy to pip
 - [ ] Add a runner, which automatically publishes a new version to pip
 - [ ] Add `documentation` folder
