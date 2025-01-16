@@ -54,9 +54,9 @@ poetry run pytest -v
 - [ ] Add badges
     - [ ] test coverage ([coveralls](https://coveralls.io/))
 - [x] Add packaging
-- [ ] Publish nurgapy to pip
-- [ ] Add a runner, which automatically publishes a new version to pip
-- [ ] Add `documentation` folder
+- [x] Publish nurgapy to pip
+- [x] Add a runner, which automatically publishes a new version to pip
+- [x] Add `documentation` folder
 
 Progress bar
 - [ ] Add percentages
