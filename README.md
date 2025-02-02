@@ -7,85 +7,52 @@
  |_| \_|\__,_|_|  \__, |\__,_|_|    \__, |
                   |___/             |___/
 ```
+---
+📦 NurgaPy : A Small Convenience Python Library
+---
+✨ About
 
-Small convenience Python library.
-
-Rationality to build this library, that I don't want to copy over this code to multiple projects.
+NurgaPy is a small, convenient Python library designed to help you avoid copying code across multiple projects. It includes two main functions:
 
 Currently, `nurgapy` library consists two functions:
 - `tyme` - it is a small wrapper function, which is used for measuring execution time of functions. Also works for the class functions.
 - `trackbar` - it is a simple progress bar, which just works without many imports. Inspired by [stackoverflow post](https://stackoverflow.com/a/34482761/15059130). There is well-known `tqdm` library, but it prevents user from using `print` statements. For simple use-cases this progress bar should be enough. There is another nice library `alive-progress`, which does not have this issue and many others. But I just wanted to have some simple progress bar, which lives in the single library with other convenience functions.
 
-## Getting started
-This project uses Poetry for the package management.
+## Getting started 🚀
 
-Install Poetry (if not installed)
+Install the [NurgaPy](https://pypi.org/project/nurgapy/) library using pip.
 ```
-curl -sSL https://install.python-poetry.org | python3 -
-```
-
-Install dependencies
-```
-poetry install
+pip install nurgapy
 ```
 
-Run the project example
-```
-poetry run src/main.py
-```
 
-## Installing pre-commit checks
+### Examples 🌟
 
-Install pre-commit
-```
-poetry run pre-commit install
-```
+#### `tyme` function usage ⏳
+```python
+from nurgapy import tyme
 
-Pre-commit will run automatically after running `git commit`.
-But it is also possible to run pre-commit checks against all files manually.
-Adding `--verbose` will also print more detailed info. Helpful for debugging test.
-```
-poetry run pre-commit run --all-files
+
+@tyme
+def my_pow(a: int, b: int):
+    for _ in range(10000000):
+        res = a**b
+    return res
 ```
 
-Update the pre-commit hooks.
-```
-poetry run pre-commit autoupdate
-```
+#### `trackbar` usage ⏲️
 
-## Running tests
-
-Run tests using pytest.
-
-```bash
-poetry run pytest -v
+```python
+for i in trackbar(range(10)):
+    time.sleep(0.5)
 ```
 
-`-s` - will print the `print()` statements. Use it for debug.
+For more usage examples check the [`examples`](/examples/) folder.
 
-## Publish a new version
+## Development and Architecture Docs 📚
+If you want to get know more about how NurgaPy works, how to set up developement enviroment and how made architectural decisions behind, please check the `docs` folder.
 
-In NurgaPy semantic versioning is used. After pushing a new version, a GitHub Actions workflow will be triggered, which will push a new version to PyPi and will also create a new GitHub Release.
-In order to publish a new version, apply the next steps:
-```
-poetry version patch  # 0.0.x
-
-poetry version minor  # 0.x.0
-
-poetry version majon  # x.0.0
-```
-
-Then create a proper git tag
-```
-git tag x.x.x
-```
-
-And push it
-```
-git push origin --tags
-```
-
-## Roadmap
+## Roadmap 🗺️
 - [x] ~~Add basic code~~
 - [x] ~~Add pre-commit hook~~
     - Add more rules to pre-commit
@@ -98,9 +65,9 @@ git push origin --tags
 - [x] Publish nurgapy to pip
 - [x] Add a runner, which automatically publishes a new version to pip
 - [x] Add `documentation` folder
-- [ ] Create an `examples` folder
+- [x] Create an `examples` folder
 
-Progress bar
+### Progress bar ⏲️
 - [ ] Add percentages
 - [ ] Flexible size
 - [ ] Progress bar runs in the independent thread
