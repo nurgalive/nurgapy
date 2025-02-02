@@ -49,7 +49,7 @@ for i in trackbar(range(10)):
 For more usage examples check the [`examples`](/examples/) folder.
 
 ## Development and Architecture Docs 📚
-If you want to get know more about how NurgaPy works, how to set up developement enviroment and how made architectural decisions behind, please check the `docs` folder.
+If you want to get know more about how NurgaPy works, how to set up developement enviroment and how made architectural decisions behind, please check the [`docs`](/docs/docs.md).
 
 ## Roadmap 🗺️
 - [x] ~~Add basic code~~
