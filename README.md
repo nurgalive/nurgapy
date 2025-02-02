@@ -10,7 +10,6 @@
 ---
 📦 NurgaPy : A Small Convenience Python Library
 ---
-✨ About
 
 NurgaPy is a small, convenient Python library designed to help you avoid copying code across multiple projects. It includes two main functions:
 
