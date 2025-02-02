@@ -12,19 +12,22 @@ def my_pow(a: int, b: int):
 
 
 class CheckTimeit:
+    """
+    You can measure exection time of functions inside the class.
+    """
+
     def __init__(self, iterations):
         self.iterations = iterations
 
-    @tyme
+    @tyme  # here the call for the time measurement
     def measure_this(self):
         for _ in range(self.iterations):
             time.sleep(0.3)
 
 
 if __name__ == "__main__":
-    ## testing timeit wrapper
+    ## testing tyme wrapper
     result = my_pow(10, 10)
-    # print("Execution time: ", exec_time) # prints after 0.07347989082336426 seconds
     print("Result: ", result)  # takes ~3 seconds
 
     ## testing progressbar
