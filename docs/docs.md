@@ -105,15 +105,42 @@ And push it
 ```
 git push origin --tags
 ```
+Only after creating a tag the GitHub Actions workflow will be triggered, which will publish a new version to PyPi and create a new GitHub Release.
+
+## If the workflow is failed
+
+If you already created and pushed the tag `0.2.0` (example), you need to delete it both locally and remotely, then recreate and push it again. This will retrigger the workflow for the same tag.
+
+Here are the steps:
+
+Delete the tag locally:
+```
+git tag -d 0.2.0
+```
+Delete the tag remotely:
+```
+git push origin --delete 0.2.0
+```
+Recreate the tag (optionally, on the latest commit):
+```
+git tag 0.2.0
+```
+Push the tag to GitHub:
+```
+git push origin --tags
+```
+This will rerun the workflow for tag `0.2.0`.
+
 # Architecture decisions
 
 Main focus of this project it to avoid me copying the same code between projects.
 As well as this project is focused on the software engineering practices, and will serve for me as blueprint for future projects as a best practices for building a project from scratch and state-of-the-art technologies in software engineering.
 This includes:
 - proper file structure of the package
-- usage of the correct code style (e.g. PEP-8 and Google Code Style)
+- usage of the correct code style (e.g. [PEP-8](https://peps.python.org/pep-0008/) and [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html))
 - usage of different tools, which makes life a software engineer easier
-(package management, style formatting and checks, code checks, spelling checks)
+(package management, style formatting and checks, code checks, spelling checks, ci/cd, etc.)
+- usage of the modern Python features, like type hints, dataclasses, etc.
 - extensive usage of automation and code testing
 
 In this section of the docs I will elaborate my decisions onto different parts of the project.
