@@ -1,3 +1,8 @@
+"""
+This example shows how to use the `tyme` from the `nurgapy` library.
+It demonstrates measuring execution time of a function without using the annotation.
+"""
+
 import time
 from nurgapy import tyme
 

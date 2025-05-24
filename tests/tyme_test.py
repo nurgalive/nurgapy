@@ -20,4 +20,4 @@ def test_tyme(capsys):
     result(1)
 
     captured = capsys.readouterr()
-    assert captured.out == "Function sleep_func(1,) Took 1.00 seconds\n"
+    assert captured.out == "Function 'sleep_func(1,)' took 1.00 seconds.\n"

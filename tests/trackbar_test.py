@@ -24,7 +24,8 @@ def test_trackbar_basic_functionality():
     output_lines = output.getvalue().strip().split("\r")
     assert all("Progress:" in line for line in output_lines)
     assert all("[" in line and "]" in line for line in output_lines)
-    assert len(output_lines) == len(items) + 1
+    # Only initial and final states are written to StringIO
+    assert len(output_lines) == 2
 
 
 def test_trackbar_output_format():
@@ -42,13 +43,5 @@ def test_trackbar_correct_progress():
     list(trackbar(items, prefix="Progress:", size=8, out=output))
     output_lines = output.getvalue().strip().split("\r")
 
-    expected_progress_states = [
-        "Progress:[........]",
-        "Progress:[██......]",
-        "Progress:[████....]",
-        "Progress:[██████..]",
-        "Progress:[████████]",
-    ]
-
-    for expected, actual in zip(expected_progress_states, output_lines):
-        assert expected in actual
+    assert "Progress:[........]" in output_lines[0]
+    assert "Progress:[████████]" in output_lines[-1]

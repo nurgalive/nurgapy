@@ -69,4 +69,4 @@ If you want to get know more about how NurgaPy works, how to set up developement
 ### Progress bar ⏲️
 - [ ] Add percentages
 - [ ] Flexible size
-- [ ] Progress bar runs in the independent thread
+- [x] Progress bar runs in the independent thread

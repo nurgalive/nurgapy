@@ -1,6 +1,6 @@
 [project]
 name = "nurgapy"
-version = "0.1.1"
+version = "0.2.0"
 description = "This lightweight Python library provides reusable utility functions to simplify common development tasks."
 authors = [
     {name = "nurgalive",email = "github@nurgalive.com"}

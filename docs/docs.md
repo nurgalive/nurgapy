@@ -93,7 +93,7 @@ poetry version patch  # 0.0.x
 
 poetry version minor  # 0.x.0
 
-poetry version majon  # x.0.0
+poetry version major  # x.0.0
 ```
 
 Then create a proper git tag
