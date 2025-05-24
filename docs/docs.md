@@ -131,6 +131,12 @@ git push origin --tags
 ```
 This will rerun the workflow for tag `0.2.0`.
 
+# Dependabot
+This project uses [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependency-updates) to keep the dependencies up-to-date.
+Configuration for the Dependabot is located in the file [.github/dependabot.yml](../.github/dependabot.yml).
+- It will automatically create pull requests to update the dependencies in the `poetry.lock` file.
+- It will also create pull requests to update the dependencies for GitHub Actions workflow located in the [.github/workflows/release.yml](.github/workflows/release.yml) directory.
+
 # Architecture decisions
 
 Main focus of this project it to avoid me copying the same code between projects.
